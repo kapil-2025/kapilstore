@@ -56,7 +56,8 @@ function App() {
     try {
 
       const response = await fetch(
-        "https://kapilstore-backend-2.onrender.com/api/game/play",
+        // "https://kapilstore-backend-2.onrender.com/api/game/play" 
+        "http://localhost:5000/api/game/play",
         {
           method: "POST",
 
@@ -199,22 +200,23 @@ setLoading(false);
 
   if (!data) return;
 
-
 if (data.success) {
 
-  setStars(data.stars);
+    setError("");
 
-  setGift(data.gift);
+    setStars(data.stars);
+    setGift(data.gift);
 
-  celebrate();
+    celebrate();
 
-  setShowResult(true);
+    setShowResult(true);
 
 } else {
 
-  alert(data.message);
+    setError(data.message);
 
 }
+
 }
 
   return (<div className="container">
@@ -647,4 +649,3 @@ rel="noreferrer"
 
 export default App;
 
-    
