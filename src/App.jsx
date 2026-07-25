@@ -189,12 +189,13 @@ function App() {
   setShowCategory(false);
 
   setShowResult(false);
+const loadingPromise = showLoadingAnimation();
 
-  await showLoadingAnimation();
+const data = await sendRequest(category);
 
-  const data = await sendRequest(category);
+await loadingPromise;
 
-  setLoading(false);
+setLoading(false);
 
   if (!data) return;
 
@@ -221,8 +222,8 @@ if (data.success) {
 <div
 className="card"
 ref={cardRef}
-// onMouseMove={handleMove}
-// onMouseLeave={resetCard}
+onMouseMove={handleMove}
+onMouseLeave={resetCard}
 >
 
 <h1 className="logo">
