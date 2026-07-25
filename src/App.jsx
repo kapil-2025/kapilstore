@@ -56,8 +56,8 @@ function App() {
     try {
 
       const response = await fetch(
-        // "https://kapilstore-backend-2.onrender.com/api/game/play" 
-        "http://localhost:5000/api/game/play",
+        "https://kapilstore-backend-2.onrender.com/api/game/play" ,
+        // "http://localhost:5000/api/game/play",
         {
           method: "POST",
 
