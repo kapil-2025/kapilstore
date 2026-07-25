@@ -1354,3 +1354,137 @@ font-size:18px !important;
     transform:translateY(-2px);
     box-shadow:0 8px 20px rgba(214,36,159,.25);
 }
+/* ===========================
+   MOBILE RESPONSIVE
+   Paste at END of App.css
+=========================== */
+
+@media screen and (max-width:768px){
+
+body{
+    padding:12px;
+    display:block;
+}
+
+.container{
+    width:100%;
+    padding:0;
+}
+
+.card{
+    width:100%;
+    max-width:560px;
+    margin:auto;
+    padding:22px;
+    border-radius:22px;
+}
+
+.logo{
+    font-size:38px;
+    letter-spacing:2px;
+}
+
+.subtitle{
+    font-size:11px;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+h2{
+    font-size:24px;
+}
+
+.inputBox{
+    padding:15px;
+    font-size:16px;
+}
+
+.btn{
+    padding:15px;
+    font-size:16px;
+}
+
+.categoryCard{
+    padding:18px;
+}
+
+.categoryCard span{
+    font-size:42px;
+}
+
+.categoryCard h3{
+    font-size:19px;
+}
+
+.categoryCard p{
+    font-size:14px;
+}
+
+.loadingBox{
+    padding:20px;
+}
+
+.loader{
+    width:55px;
+    height:55px;
+}
+
+.loadingBox h2{
+    font-size:22px;
+}
+
+.resultCard{
+    padding:22px !important;
+}
+
+.resultCard h1{
+    font-size:34px !important;
+}
+
+.resultCard h2{
+    font-size:24px !important;
+}
+
+.categoryBadge{
+    width:100%;
+    font-size:16px !important;
+    padding:14px;
+}
+
+.giftName{
+    width:100%;
+    max-width:100%;
+    font-size:24px !important;
+    padding:18px !important;
+}
+
+.resultCard p{
+    font-size:15px !important;
+}
+
+.notice{
+    padding:18px !important;
+}
+
+.notice h4{
+    font-size:22px !important;
+}
+
+.notice p{
+    font-size:15px !important;
+}
+
+.infoText a,
+.giftInfo a{
+    width:100%;
+    text-align:center;
+    font-size:15px;
+    padding:14px;
+}
+
+.starsText{
+    font-size:34px !important;
+    letter-spacing:6px;
+}
+
+}
