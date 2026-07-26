@@ -169,15 +169,15 @@ function App() {
 
    setLoadingText("🔍 Checking Your Coupon...");
 setLoadingSubText("Please don't leave this page.");
-await new Promise(resolve => setTimeout(resolve, 1500));
+await new Promise(resolve => setTimeout(resolve, 2000));
 
 setLoadingText("✨ Coupon Verified");
 setLoadingSubText("We're preparing your reward.");
-await new Promise(resolve => setTimeout(resolve, 1500));
+await new Promise(resolve => setTimeout(resolve, 2000));
 
 setLoadingText("🎯 Matching Your Reward...");
 setLoadingSubText("Finding the best surprise for you.");
-await new Promise(resolve => setTimeout(resolve, 1500));
+await new Promise(resolve => setTimeout(resolve, 2000));
 
 setLoadingText("🎁 Reserving Your Gift...");
 setLoadingSubText("Your reward is being secured.");
@@ -189,7 +189,7 @@ await new Promise(resolve => setTimeout(resolve, 1500));
 
 setLoadingText("🏆 Final Verification...");
 setLoadingSubText("Please wait a moment.");
-await new Promise(resolve => setTimeout(resolve, 1500));
+await new Promise(resolve => setTimeout(resolve, 1700));
 
 setLoadingText("✨ Almost Ready...");
 setLoadingSubText("Your reward will appear shortly.");
