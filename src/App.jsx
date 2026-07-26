@@ -237,8 +237,8 @@ if (data.success) {
 <div
 className="card"
 ref={cardRef}
-onMouseMove={handleMove}
-onMouseLeave={resetCard}
+// onMouseMove={handleMove}
+// onMouseLeave={resetCard}
 >
 
 <h1 className="logo">
