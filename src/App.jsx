@@ -17,6 +17,7 @@ function App() {
   const [showResult, setShowResult] = useState(false);
 
   const [loading, setLoading] = useState(false);
+  const [loadingSubText, setLoadingSubText] = useState("");
   const [loadingText, setLoadingText] = useState("");
 
   const [error, setError] = useState("");
@@ -506,6 +507,7 @@ loading && (
 <div className="loader"></div>
 
 <h2>{loadingText}</h2>
+ <p className="loadingSubText">{loadingSubText}</p>
 
 </div>
 
